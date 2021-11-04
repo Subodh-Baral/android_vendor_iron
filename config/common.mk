@@ -1,6 +1,7 @@
 # Allow vendor/extras to override any property by setting it first
-$(call inherit-product, vendor/iron/config/audio.mk)
+$(call inherit-product, vendor/iron/audio/audio.mk)
 $(call inherit-product-if-exists, vendor/extras/product.mk)
+$(call inherit-product, vendor/iron/overlay/overlay.mk)
 
 PRODUCT_BRAND ?= Iron
 
