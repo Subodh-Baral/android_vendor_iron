@@ -1,4 +1,5 @@
-# Iron packages
+$(call inherit-product, vendor/iron/themes/themes.mk)
+
 PRODUCT_PACKAGES += \
     ThemePicker \
     QuickAccessWallet \
@@ -24,6 +25,11 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
+# LineageOS apps
+PRODUCT_PACKAGES += \
+    ExactCalculator \
+    Jelly \
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
@@ -37,4 +43,12 @@ PRODUCT_PACKAGES += \
 # rsync
 PRODUCT_PACKAGES += \
     rsync
+
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig \
+
+# Wallpapers
+PRODUCT_PACKAGES += \
+    ProtonWallpaperStub \
 
