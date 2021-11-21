@@ -77,6 +77,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=log
 
+# Gapps
+$(call inherit-product, vendor/iron/config/gapps.mk)
+
 # Include AOSP audio files
 #include vendor/iron/config/aosp_audio.mk
 
@@ -125,11 +128,6 @@ include vendor/iron/config/version.mk
 
 # Packages
 include vendor/iron/config/packages.mk
-
-ifeq ($(WITH_GAPPS), true)
-# GApps
-include vendor/gms/products/gms.mk
-endif
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
