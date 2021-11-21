@@ -14,12 +14,12 @@
 # limitations under the License.
 
 # Versioning System
-IRON_CODENAME := Ember
+IRON_CODENAME := MacteAnimo
 IRON_NUM_VER := 2.0
 
 TARGET_PRODUCT_SHORT := $(subst iron_,,$(IRON_BUILD_TYPE))
 
-IRON_BUILD_TYPE ?= UNOFFICIAL
+IRON_BUILD_TYPE ?= BETA
 
 # Only include Updater for official, weeklies, CI and nightly builds
 ifeq ($(filter-out OFFICIAL WEEKLIES NIGHTLY CI,$(IRON_BUILD_TYPE)),)
