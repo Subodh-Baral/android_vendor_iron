@@ -131,6 +131,12 @@ include vendor/iron/config/version.mk
 # Packages
 include vendor/iron/config/packages.mk
 
+# Pixel charger images
+ifeq ($(USE_PIXEL_CHARGER_IMAGES),true)
+PRODUCT_PACKAGES += \
+    product_charger_res_images
+endif
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
