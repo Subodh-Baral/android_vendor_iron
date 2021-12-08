@@ -260,4 +260,7 @@
 
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
+
+    <!-- Suppress Intent Filter Verification Service crashes -->
+    <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice</string>
 </resources>
