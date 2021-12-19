@@ -261,6 +261,6 @@
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
 
-    <!-- Suppress Intent Filter Verification Service crashes -->
-    <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice</string>
+    <!-- Suppress Intent Filter Verification Service crashes and System UI ANRs (both AOSP bugs) -->
+    <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice,com.android.systemui</string>
 </resources>
